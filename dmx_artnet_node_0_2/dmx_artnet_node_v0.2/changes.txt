@@ -1,0 +1,8 @@
+Changes.
+version 0.2 beta
+--------------------
+- Not needed anymore modifications on file hardwareserial.cpp
+- Now using deskontrol DMX library version 0.3
+- Support for Tinkerkit DMX shield in UART mode
+- Support for universe address
+- Unified code for Arduino MEGA and Arduino UNO

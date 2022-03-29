@@ -1,0 +1,33 @@
+Nodo ArtNet-DMX basado en Arduino
+
+O como hacer un nodo Art-Net por menos de 50$
+
+
+En este post te mostramos como construir un nodo Art-Net basado en Arduino mega, con dos universos DMX de salida (1024 canales DMX). Este nodo responde a los mensajes basicos del protocolo Art-Net y por tanto cualquier equipo que cumpla el protocolo sera capaz de detectarlo y utilizarlo como salida DMX.
+
+¿Que necesitamos?
+
+- Un Arduino UNO o Arduino mega 2560 o mega 1280, el montaje y el codigo han sido probados con Arduino UNO y mega 2560, debe funcionar sin problemas en el 1280.
+
+- Un shield ethernet basado en Wiznet W5100 (Arduino ethershield)
+
+- El shield DMX basado en el esquema incluido:
+
+- Libreria deskontrol 4 universos DMX (incluida en el paquete)
+
+- Arduino IDE v0023 (El codigo para el nodo Art-Net no funciona de momento con versiones superiores)
+
+
+Instrucciones de instalacion:
+
+Copiar la carpeta “Dmx” incluida en el paquete a la carpeta arduino-0023/libraries/
+
+Copiar la carpeta "artnet_node" a nuestra carpeta de sketchs, en mi caso "Arduino"
+
+Ahora podemos abrir el sketch del proyecto "artnet_node", compilamos el codigo y lo cargamos al Arduino.
+
+Para probar el funcionamiento yo he utilizado el software "MADRIX", la utilidad "DmxWorkshop" de Artistic licence, y la utilidad "artnet-discover" que es parte de la libreria libartnet de Simon Newton. Todas estos programas son para windows, si quieres probar con Linux puedes utilizar "Q-light". (Configura el ordenador con la IP 2.0.0.1 subnet-mask 255.0.0.0 gateway 2.0.0.1)
+
+Espero que compartas tus experiencias en el Blog.
+
+
